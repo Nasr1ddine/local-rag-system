@@ -1,0 +1,21 @@
+# API
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+
+# PDF parsing & image extraction
+pymupdf>=1.24.0
+
+# Text splitting
+langchain-text-splitters>=0.2.0
+
+# Vector store
+chromadb>=0.5.0
+
+# LLM & embeddings (via Ollama)
+ollama>=0.2.0
+
+# Data validation
+pydantic>=2.0.0
+
+# CLI (legacy main.py)
+typer>=0.12.0

@@ -1,0 +1,77 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+wheels/
+
+# Type checking & linting caches
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.pytype/
+
+# Testing
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+*.cover
+
+# ── RAG / ML Data ─────────────────────────────────────────────────────────────
+# Raw and processed PDFs (large binary files)
+data/raw_pdfs/
+data/processed/
+
+# Vector store database files
+vector_store/
+
+# Downloaded model weights (large files — re-download as needed)
+models/
+
+# ── Secrets & Config ──────────────────────────────────────────────────────────
+.env
+.env.*
+*.env
+secrets.json
+config.local.*
+
+# ── Logs & Temp ───────────────────────────────────────────────────────────────
+*.log
+error.txt
+logs/
+tmp/
+temp/
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editors ───────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

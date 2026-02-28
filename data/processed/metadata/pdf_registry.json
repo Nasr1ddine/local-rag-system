@@ -1,0 +1,22 @@
+{
+    "5825cd34fd46ba2ff34b39cf2470bc18256f42c9fbad05fb69dacaba16150e0a": {
+        "filename": "Building Agents with OpenAI Agents SDK.pdf",
+        "original_path_or_url": "C:\\Users\\SANGAI\\Desktop\\antigravity RAG test\\rag_system\\data\\raw_pdfs\\Building Agents with OpenAI Agents SDK.pdf",
+        "size_bytes": 9665580
+    },
+    "3df79d34abbca99308e79cb94461c1893582604d68329a41fd4bec1885e6adb4": {
+        "filename": "dummy.pdf",
+        "original_path_or_url": "C:\\Users\\SANGAI\\Desktop\\antigravity RAG test\\rag_system\\data\\raw_pdfs\\dummy.pdf",
+        "size_bytes": 13264
+    },
+    "faff02d9085bcef742a53ff142f0c1d8dd601a0cee97c5d2c1e7e882d6a1df58": {
+        "filename": "Robust Python _ write clean and maintainable code.pdf",
+        "original_path_or_url": "C:\\Users\\SANGAI\\Desktop\\antigravity RAG test\\rag_system\\data\\raw_pdfs\\Robust Python _ write clean and maintainable code.pdf",
+        "size_bytes": 7425661
+    },
+    "6a126dd7fb020e628f6cc3018ac17f040e11b21ae8ffc46adb3175d6651fe038": {
+        "filename": "LLMOps_ Managing Large Language Models in Production.pdf",
+        "original_path_or_url": "C:\\Users\\SANGAI\\Desktop\\antigravity RAG test\\rag_system\\data\\raw_pdfs\\LLMOps_ Managing Large Language Models in Production.pdf",
+        "size_bytes": 7154721
+    }
+}
