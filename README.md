@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Local RAG System
 
 A fully local, production-quality Retrieval-Augmented Generation (RAG) system that ingests PDF books and answers questions with precise source attribution — no cloud, no internet required after setup.
@@ -126,3 +127,7 @@ Edit `src/core/config.py` to change:
 | `CHUNK_SIZE` | `500` | Characters per chunk |
 | `CHUNK_OVERLAP` | `100` | Overlap between chunks |
 | `TOP_K_RETRIEVAL` | `5` | Number of chunks retrieved per query |
+=======
+# local-rag-system
+A production-quality, fully local Retrieval-Augmented Generation (RAG) system powered by Ollama, ChromaDB, and FastAPI. Supports PDF ingestion, semantic search, and grounded question answering with source attribution — entirely offline and privacy-preserving.
+>>>>>>> 3481f1744dded11a13b5cbd26ee976579c67ec5c
