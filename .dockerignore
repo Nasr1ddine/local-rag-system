@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Git
+.git/
+.gitignore
+
+# CI / IDE
+.github/
+.vscode/
+.idea/
+
+# Data & models (mounted as volumes at runtime)
+data/
+vector_store/
+models/
+
+# Docs & test artifacts
+*.md
+*.txt
+error.txt
+
+# OS
+.DS_Store
+Thumbs.db

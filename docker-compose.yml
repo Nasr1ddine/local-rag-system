@@ -1,0 +1,42 @@
+services:
+  # ── FastAPI application ──────────────────────────────────────────────────────
+  api:
+    build: .
+    container_name: rag-api
+    ports:
+      - "${PORT:-8000}:8000"
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+      LLM_MODEL: ${LLM_MODEL:-llama3.1}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-nomic-embed-text}
+      CHUNK_SIZE: ${CHUNK_SIZE:-500}
+      CHUNK_OVERLAP: ${CHUNK_OVERLAP:-100}
+      TOP_K_RETRIEVAL: ${TOP_K_RETRIEVAL:-5}
+    volumes:
+      - rag_data:/app/data
+      - rag_vector_store:/app/vector_store
+    depends_on:
+      ollama:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # ── Ollama LLM server ────────────────────────────────────────────────────────
+  ollama:
+    image: ollama/ollama:latest
+    container_name: rag-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_models:/root/.ollama
+    healthcheck:
+      test: [ "CMD", "ollama", "list" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
+
+volumes:
+  rag_data:
+  rag_vector_store:
+  ollama_models:

@@ -2,20 +2,21 @@ import logging
 import ollama
 from typing import List
 
-from src.core.config import EMBEDDING_MODEL
+from src.core.config import EMBEDDING_MODEL, OLLAMA_HOST
 
 logger = logging.getLogger(__name__)
 
 class Embedder:
     def __init__(self, model_name=EMBEDDING_MODEL):
         self.model_name = model_name
+        self._client = ollama.Client(host=OLLAMA_HOST)
 
     def generate_embeddings_batch(self, texts: List[str]) -> List[List[float]]:
         """Generate embeddings for a batch of texts using Ollama."""
         embeddings = []
         try:
             for text in texts:
-                response = ollama.embeddings(
+                response = self._client.embeddings(
                     model=self.model_name,
                     prompt=text
                 )
@@ -28,7 +29,7 @@ class Embedder:
     def generate_embedding(self, text: str) -> List[float]:
         """Generate embedding for a single text string."""
         try:
-            response = ollama.embeddings(
+            response = self._client.embeddings(
                 model=self.model_name,
                 prompt=text
             )
