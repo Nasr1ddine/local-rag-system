@@ -51,6 +51,7 @@ models/
 # ── Secrets & Config ──────────────────────────────────────────────────────────
 .env
 .env.*
+!.env.example
 *.env
 secrets.json
 config.local.*
