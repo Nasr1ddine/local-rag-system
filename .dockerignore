@@ -28,6 +28,7 @@ models/
 # Docs & test artifacts
 *.md
 *.txt
+!requirements.txt
 error.txt
 
 # OS
