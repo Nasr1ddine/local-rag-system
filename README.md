@@ -66,11 +66,12 @@ rag_system/
 ## Setup
 
 ```bash
-# 1. Create and activate virtual environment (using uv recommended)
-uv venv .venv
+# 1. Create and activate virtual environment 
+uv venv .venv  #using uv recommended
 .venv\Scripts\Activate.ps1   # Windows PowerShell
 
 # 2. Install dependencies
+pip install python-multipart
 pip install -r requirements.txt
 
 # 3. Start the API server (from the rag_system/ directory)
